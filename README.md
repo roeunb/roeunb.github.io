@@ -1,3 +1,6 @@
- # Hello. This is my practice with HTML/CSS, Java.
- # Fin_Web_EunbeeRo : This practice is website page with HTML, CSS.
- # Fin_JavaProject : This practice is simple tool with java.
+ <body>
+ Hello. This is my exercise.<br>
+ <b>Fin_Web_EunbeeRo</b> : This Exercise is code that created website page with HTML/CSS.<br>
+ <b>Fin_JavaProject</b> : This Exercise is code that created simple tool with java.<br>
+ 
+ </body>
