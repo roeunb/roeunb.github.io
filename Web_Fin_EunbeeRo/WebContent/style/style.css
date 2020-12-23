@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300&display=swap');
+
+
+*{
+	scroll-behavior: smooth;
+}
+
+
+header {
+	width:100%;
+}
+
+#logo {
+	position: static;
+	margin: 30px;
+	padding:20px;
+	padding-bottom:0px;
+	font-family: 'Mulish';
+	font-size:2.5em;
+	color: black;
+	text-align: center;
+}
+
+#logo a {
+	text-decoration: none;
+	color: black;
+}
+
+
+/************************************************************************************
+ 										nav 영역
+*************************************************************************************/
+
+ul {
+	
+	list-style-type: none;
+	positon: relative;
+	width:100%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	overflow: hidden;
+	font-size: 1.3em;
+	color: black;
+	font-family: 'Mulish';
+	
+}
+
+ul li {
+	display: inline-block;
+	margin: 20px;
+}
+
+ ul li a {
+ 	 text-decoration: none;
+ 	 color: #000;
+ }
+
+
+/************************************************************************************
+ 										main 이미지 영역
+************************************************************************************/
+
+.main {
+	position: relative;
+	float: left;
+	margin-top:20px;
+	width: 100%;
+	height: 800px;
+	background-image: url(../images/main2.jpg);
+	background-size: cover;
+
+}
+
+.main_txt{
+     position: absolute;
+     opacity: 95%;
+     width:100%;
+     top:500px;
+     left:20px;
+     font-size: 3.4em;
+     color: white;
+     text-align: left;
+     color: #fff;/* #d4d4d4; */
+     text-shadow: 2px 2px 25px black;
+     font-family: 'Mulish';
+}
+
+
+/***************************************이미지 메뉴 영역***************************************************/
+
+article {
+	float: left;
+	height: 500px;
+	margin: 10px 0;
+}
+
+/*각 박스(article) 크기지정*/
+article:nth-child(1) { width: 33.33%; background-color:#ddd;}
+article:nth-child(2) { width: 33.33%; background-color:#ccc;}
+article:nth-child(3) { width: 33.33%; background-color:#bbb;}
+
+/************************************ 배경 이미지 삽입 *************************************************/
+.i_m1 {	background-image: url('../images/menu1-.jpg');  background-size: cover;}
+.i_m2 {	background-image: url('../images/menu2.jpg');  background-size: cover;}
+.i_m3 {	background-image: url('../images/menu3.jpg');  background-size: cover;}
+
+/**************************************이미지박스 호버 효과**************************************************/
+
+.container {
+  position: relative;
+  float: left;
+  width: 33.33%;
+  margin: 30px 0 20px 0;
+  
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+.container:hover .overlay {
+  opacity: 50%;
+  
+}
+
+.text {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: 'Mulish';
+  letter-spacing:0.1em;
+}
+
+
+ /*********BEST SELLER**********/
+
+.best {
+	position: relative;
+	float: left;
+	margin: 20px 0;
+	width: 100%;
+	height: 300px;
+	background-image: url(../images/best1.jpg);
+	background-size: cover;
+	
+}
+
+.best .txt{
+     position: absolute;
+     top:30%;
+     left:22%;
+     transform: translate(-50%, -50%);                                                                   
+     font-size:3em;
+     color: white;
+     text-align: center;
+     font-family: 'Mulish';
+     opacity:90%;
+     letter-spacing:0.02em;
+     
+}
+
+.best:hover {
+	opacity:87%;
+	transition: .5s ease;
+}
+
+ /*********NEW ARRIVAL**********/
+
+.new {
+	float: left;
+}
+
+.new_all {
+	margin: 5px 10px;
+}
+
+.new_all p {
+	text-align: center;
+} 
+.new_p {
+	
+	border: solid 1px #c0c0c0;
+	margin: 10px;
+}
+
+.title h2 {
+	font-size: 3em;
+	font-family: 'Mulish';
+	text-align: center;
+}
+
+/************************************************************************************
+ 										상품영역
+*************************************************************************************/
+
+.top{
+	width: 90%;
+	text-align: center;	
+	font-family: 'Mulish';
+	margin-top: 100px;
+	margin-left:50px;
+	margin-bottom:50px;
+	
+}
+
+.category {
+	width: 90%;
+	margin: auto 20px;
+}
+
+
+.product {
+	float: left;
+	margin: 20px;
+	margin-left:100px;
+	font-family: 'Gothic A1';
+	font-style: italic;
+}
+
+.product img {
+	margin-right: 150px;
+}
+.content {
+	float: left;
+	margin:auto 20px;
+}
+
+.content p {
+	line-height: 1.5;
+}
+
+.buy:link, .buy:visited {
+  background-color: #808080;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.buy:hover, .buy:active {
+  background-color: black;
+}
+
+
+/***************************************************************************************
+									pagetop (페이지 상단으로 가는 버튼)													
+****************************************************************************************/
+
+#pagetop img {
+	position: fixed;
+	bottom: 10px;
+	right: 1px;
+	
+}
+
+
+footer {
+	float: left;
+	width: 100%;
+	height: 20px;
+	margin: 50px auto;
+	font-size: 90%;
+	padding: 20px 0 5px 0;
+	text-align: center;
+	background-color: transparent;
+	color: #111;
+	font-family: 'Mulish';
+}
+
+footer a {
+ 	 text-decoration: none;
+ 	 color: #111;
+ }
+ 
+footer a:hover {
+ 	 text-decoration: underline;
+ }
+footer p {
+	text-align: center;
+}
+
+/***************************************************************************************
+									미디어 쿼리 작성												
+****************************************************************************************/
+
+/* 데스크탑 모니터 */
+@media  all and (min-width: 1024px) and (max-width: 1365px) {
+	.main {
+		position: relative;
+		float: left;
+		margin-top:20px;
+		width: 1024;
+		height: 800px;
+		background-image: url(../images/main2.jpg);
+		background-size: cover;
+	
+	}
+	
+	.main_txt{
+	     position: absolute;
+	     opacity: 80%;
+	     width:1024px;
+	     top:500px;
+	     left:20px;
+	     font-size: 2.5em;
+	     color: white;
+	     text-align: left;
+	     color: #d4d4d4;
+	     text-shadow: 2px 2px 25px black;
+	     font-family: 'Mulish';
+	}
+	
+
+}
+/* 768~1023px*/
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+		.main {
+		position: relative;
+		float: left;
+		margin-top:20px;
+		width: 1024;
+		height: 800px;
+		background-image: url(../images/main2.jpg);
+		background-size: cover;
+		
+	
+	}
+	
+	.main_txt{
+	     position: absolute;
+	     opacity: 80%;
+	     width:1024px;
+	     top:500px;
+	     left:20px;
+	     font-size: 2em;
+	     color: white;
+	     text-align: left;
+	     color: #d4d4d4;
+	     text-shadow: 2px 2px 25px black;
+	     font-family: 'Mulish';
+	     
+	}
+	
+	.text {
+		font-size:20px;
+	}
+	
+}
+
+/*~767px */
+
+@media all and (max-width: 767px) {
+		.main {
+		position: relative;
+		float: left;
+		margin-top:20px;
+		width: 1024;
+		height: 800px;
+		background-image: url(../images/main2.jpg);
+		background-size: cover;
+		display: none;
+	
+	}
+	
+	.main_txt{
+	     position: absolute;
+	     opacity: 80%;
+	     width:1024px;
+	     top:500px;
+	     left:20px;
+	     font-size: 1.5em;
+	     color: white;
+	     text-align: left;
+	     color: #d4d4d4;
+	     text-shadow: 2px 2px 25px black;
+	     font-family: 'Mulish';
+	     display: none;
+	}
+	
+	.best{
+		display:none;
+	}
+
+	.text {
+		font-size:10px;
+	}
+	
+	.title h2 {
+		font-size:30px;
+	}
+
+}
+
